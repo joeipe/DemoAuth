@@ -1,0 +1,17 @@
+﻿<div>
+    <h2>{{message}}</h2>
+    <div class="form-group">
+        <table id="tblState" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>State Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="state in states | orderBy : '+name'">
+                    <td>{{state.name | uppercase}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
